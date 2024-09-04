@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrapmin/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="icons/all.min.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="all">
+        <div class="whole_div mx-auto">
+          <div class="signIn_container">
+            <div class="image_position">
+              <div><img src="image/formImage.jpg" alt="" /></div>
+
+              <div class="data_section">
+                <span></span>
+                <h1>DATAQOLO</h1>
+                <p>decide with data</p>
+              </div>
+            </div>
+
+            <div class="form_container">
+              <form action="" class="form">
+                <h1>WELCOME</h1>
+                <h4>Create an account with DataQolo</h4>
+                <p>Already have an account? <a href="">Sign In</a></p>
+
+                <div class="form-floating mb-1">
+                  <div>
+                    <label for="floatingInput">Full Name</label>
+                  </div>
+                  <input type="text" class="name" name="fullName" />
+                  <div class="error"></div>
+                </div>
+
+                <div class="form-floating mb-1">
+                  <div>
+                    <label for="email">E-MailAddress</label>
+                  </div>
+                  <input type="email" class="email" name="email" />
+                  <div class="error"></div>
+                </div>
+
+                <div class="form-floating mb-1">
+                  <div><label for="phoneNum">Phone Number</label></div>
+                  <input type="number" class="phoneNum" name="phoneNum" />
+                  <div class="error"></div>
+                </div>
+
+                <div class="form-floating">
+                  <div><label for="password">Password</label></div>
+                  <input type="password" class="password" name="password" />
+                  <div class="error"></div>
+                </div>
+
+                <div class="form-floating mt-1">
+                  <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                  </div>
+                  <input
+                    type="password"
+                    class="confirmPassword"
+                    confirmPass
+                    name="confirmPassword"
+                  />
+                  <div class="error"></div>
+                </div>
+
+                <div class="btn_container">
+                  <button type="submit">Continue</button>
+                  <p>
+                    By registeringyou accept our <a href="">Terms of use</a> and
+                    <a href=""> Privacy policy</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal_div hidden">
+          <h1>
+            Wait for OTP for Verification
+            <p style="text-align: center; margin-top: 10px" class="fa-fade">
+              ➡️➡️➡️
+            </p>
+          </h1>
+        </div>
+
+        <div>
+          <!-- <a href="/emailverify.html">uytretrewertyu</a> -->
+        </div>
+
+        <main>
+          <section>
+            <div class="verify-input show_off">
+              <div>
+                <h1>Email Verification</h1>
+                <p>An OTP has been sent to your email address</p>
+                <p>Enter OTP sent to*********.com</p>
+
+                <form action="" class="subForm">
+                  <div class="wel">
+                    <div class="verify-inputs">
+                      <input type="text" focus()/>
+                    </div>
+                    <div class="verify-inputs">
+                      <input type="text" />
+                    </div>
+                    <div class="verify-inputs">
+                      <input type="text" />
+                    </div>
+                    <div class="verify-inputs">
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="resend_container">
+                    <div>
+                      <a href=""> Resend in 30s</a>
+                    </div>
+                    <div>
+                      <a href="">Try another way</a>
+                    </div>
+                  </div>
+
+                  <div class="verify_btn">
+                    <div class="verify_success remove">
+                      Verification Success
+                    </div>
+                    <button type="submit">Verify</button>
+                  </div>
+
+                  <div class="verify_mark remove">
+                    <i class="fa fa-check"></i>
+                  </div>
+                </form>
+
+                <div class="overlay remove"></div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- <div class="home_page off">
+                <h1>Welcome to Home Page</h1>
+            </div> -->
+      </section>
+    </main>
+  </body>
+</html>

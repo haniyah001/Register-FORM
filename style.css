@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* position: relative; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.all {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.signIn_container {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+
+.form_container h1 {
+  padding-top: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 30px;
+  color: #106c78;
+}
+
+.form_container h4 {
+  margin-top: 1rem;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+.form_container p {
+  /* margin-top: 1.5rem; */
+  margin-left: 5.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_container p a {
+  text-decoration: none;
+  color: #106c78;
+  font-weight: 700;
+}
+.form_container p a:hover {
+  color: #1599ab;
+  transition: 0.2s ease-in-out;
+}
+
+.image_position {
+  position: relative;
+}
+.signIn_container img {
+  width: 40rem;
+  height: 41rem;
+  object-fit: cover;
+}
+
+.signIn_container input {
+  width: 40rem;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  padding: 7px;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="nmber"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+
+.data_section {
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
+  text-align: end;
+}
+.data_section span {
+  background-color: rgb(142, 229, 12);
+  color: rgb(142, 229, 12);
+  padding: 0px 8px;
+  border-radius: 50%;
+}
+
+.data_section h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 30px;
+  color: #106c78;
+  padding: 0;
+  margin: 0;
+}
+.data_section p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 12px;
+}
+
+.btn_container {
+  text-align: center;
+  margin-top: 30px;
+}
+.btn_container button {
+  width: 100%;
+  border: none;
+  background-color: #106c78;
+  color: white;
+  padding: 9px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.btn_container button:hover {
+  width: 70%;
+  transition: 0.5s ease-in-out;
+}
+.btn_container p {
+  text-align: start;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.btn_container p a {
+  text-decoration: underline;
+}
+label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.error input {
+  border: 1px solid red;
+  padding: 5px;
+}
+.success input {
+  border-bottom: 2px solid green;
+  padding: 7px;
+}
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+.modal_div {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  transform: -50%, -50%;
+  background-color: rgb(214, 212, 212);
+  padding: 5rem;
+  color: #000333;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  animation: scale 0.5s backwards;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+@keyframes scale {
+  0% {
+    transform: translateY(-50%);
+  }
+}
+.modal_div h1 {
+  font-weight: 800;
+}
+
+.hidden {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.home_page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  width: 100%;
+  height: 100vh;
+}
+.home_page h1 {
+  font-weight: 800;
+}
+
+/* =========================================== */
+/* ========== Email Verification ============= */
+/* ============================================*/
+body {
+  position: relative;
+}
+.verify-input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 7rem;
+}
+/* .show_off{
+    display: none;
+} */
+.verify-input h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.verify-input p {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  font-size: 15px;
+}
+.wel {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.verify-inputs input {
+  text-align: center;
+  border: none;
+  width: 3rem;
+  border-bottom: 2px solid black;
+  outline: none;
+
+}
+
+.resend_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.resend_container a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #1b98a9;
+  font-weight: 600;
+}
+.verify_success {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+.remove {
+  display: none;
+}
+.verify_btn {
+  margin-top: 4rem;
+}
+.verify_btn button {
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: #106c78;
+  color: white;
+  font-weight: 600;
+}
+
+.verify_btn button:hover {
+  background-color: #1b98a9;
+  transition: 0.5s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.verify_mark {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa-check {
+  font-size: 7rem;
+  padding: 4rem;
+  background-color: #1b98a9;
+  color: white;
+  border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+}
